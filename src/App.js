@@ -274,12 +274,13 @@ const App = () => {
     setMessage(message);
     setTimeout(() => {
       setMessage('');
-    }, 2000);
+    }, 1300);
   };
 
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Tic Tac Toe 4x4</h1>
         <div className="board">
           {gameFields.map((gf,i) => (
             <div
@@ -299,7 +300,7 @@ const App = () => {
           ))}
         </div>
 
-        <div style={{ maxHeight: '80px', fontSize: '18px' }}>
+        <div style={{ maxHeight: '65px', fontSize: '18px' }}>
           {winner !== 0 && winner !== 'Tie' && (
             <Alert color="primary">
               {winner}
